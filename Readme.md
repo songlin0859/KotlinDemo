@@ -1,6 +1,8 @@
 ### KotlinDemo
 > 网络不好 直接Android Studio开搞
 
+[kotlincn](http://www.kotlincn.net/docs/reference/)
+
 ### HelloWorld
 ```kotlin
 ///**
