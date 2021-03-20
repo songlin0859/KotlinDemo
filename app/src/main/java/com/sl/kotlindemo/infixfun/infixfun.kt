@@ -1,4 +1,4 @@
-package com.sl.kotlindemo
+package com.sl.kotlindemo.infixfun
 
 class InfixFun(var size: String) {
     infix fun plus(size: String): String {

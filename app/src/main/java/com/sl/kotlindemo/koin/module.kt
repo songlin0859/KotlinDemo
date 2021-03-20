@@ -7,3 +7,9 @@ val myModule = module {
         User()
     }
 }
+
+val singleModlue = module {
+    single {
+        Address()
+    }
+}
