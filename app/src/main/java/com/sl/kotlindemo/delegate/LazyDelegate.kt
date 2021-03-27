@@ -43,19 +43,3 @@ fun main() {
     println(lazyValue)
     println(lazyValue)
 }
-
-
-
-
-
-
-//fun example(computeFoo: () -> String) {
-//    val memoizedFoo by lazy(computeFoo)
-//    println(memoizedFoo)
-//}
-//
-//fun main() {
-//    example{
-//        "Chen"
-//    }
-//}
