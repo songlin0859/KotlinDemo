@@ -33,14 +33,19 @@ class MainActivity : AppCompatActivity() {
         println(scopeData)
         println(scopeData1)
         println(scopeData === scopeData1)
-
+        //014 2 3
+        println("0--${Thread.currentThread().name}")
         lifecycleScope.launch/*(Dispatchers.Main)*/ {
+            println("1--${Thread.currentThread().name}")
             val getStr = withContext(Dispatchers.IO){
+                println("2--${Thread.currentThread().name}")
                 findViewById<TextView>(R.id.textView).text = Thread.currentThread().name
                 getString()
             }
+            println("3--${Thread.currentThread().name}")
             findViewById<TextView>(R.id.textView).text = Thread.currentThread().name + getStr
         }
+        println("4--${Thread.currentThread().name}")
     }
 
     private suspend fun getString(): String{
